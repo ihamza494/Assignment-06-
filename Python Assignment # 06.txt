@@ -1,0 +1,90 @@
+QUESTION # 1:Object Oriented Programming Language:
+
+As the name suggests uses objects in programming. Object-oriented programming aims
+to implement real-world entities like inheritance, hiding, polymorphism, etc in 
+programming. The main aim of OOP is to bind together the data and the functions 
+that operate on them so that no other part of the code can access this data except 
+that function.
+
+QUESTION # 2:Benefits of OOP:
+
+Polymorphism
+Abstraction
+Inheritance
+Encapsulation
+Class 
+Object
+
+
+QUESTION # 3:Differentiate betwen Function and Method:
+
+Function:
+A function is a piece of code that is called by name. It can be passed data to 
+operate on (i.e. the parameters) and can optionally return data (the return value).
+All data that is passed to a function is explicitly passed.
+
+Method:
+A method is a piece of code that is called by a name that is associated with an 
+object. In most respects it is identical to a function except for two key 
+differences:
+A method is implicitly passed the object on which it was called.
+A method is able to operate on data that is contained within the class 
+
+QUESTION # 4:Define Following:
+
+CLASS:
+Class is a blueprint for creating objects it consist of constructors destructors
+and attributes for functions.
+The user-defined objects are created using the class keyword. The class is a 
+blueprint that defines a nature of a future object. An instance is a specific 
+object created from a particular class. Classes are used to create and manage
+new objects and support inheritance—a key ingredient in object-oriented
+programming and a mechanism of reusing code.
+
+OBJECTS:
+objects are the things you think about first in designing a program and they are
+also the units of code that are eventually derived from the process
+
+ATTRIBUTE:
+In Object-oriented programming(OOP), classes and objects have attributes.
+Attributes are data stored inside a class or instance and represent the 
+state or quality of the class or instance. In short, attributes store information 
+about the instance.
+
+BEHAVIOR:
+A class's behavior determines how an instance of that class operates; for example,
+how it will "react" if asked to do something by another class or object or if its
+internal state changes. Behavior is the only way objects can do anything to 
+themselves or have anything done to them.
+
+QUESTION # 5:PROGRAM
+
+
+class CAR:
+    def __init__(self,model,color,car,owner,price):
+        self.model=model
+        self.color=color
+        self.car=car
+        self.owner=owner
+        self.price=price
+        
+    def _Tax(self):
+        return '{}' .format(self.price+50)
+    
+    def _owner(self):
+        return '{}'.format(self.owner)
+    
+    def _model(self):
+        return '{}'.format(self.model)
+        
+        
+
+c1=CAR(1997,'red','gli','Ali',2000)
+c2=CAR(2017,'white','mehran','Shahid',5000)
+c3=CAR(2000,'silver','cultus','Sabir',1000)
+c4=CAR(2008,'red','alto','Hamza',4000)
+c5=CAR(2005,'grey','xli','Hunaid',3000)
+
+print(c1._owner())
+print(c2._Tax())
+print(c3._model())
